@@ -22,3 +22,9 @@ Ce projet a été bootstrapé avec la cli 3.0 de vue.
 Elle est encore en beta, mais permet d'ores et déjà la mise en place
 facilitée de projets front modernes, avec l'évolution des dépendances
 de tooling.
+
+## Mettre a jour les snapshots
+```
+npm run test:unit -- --watch
+```
+Then choose to update the snapshot (u)
