@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.vue renders correctly 1`] = `
+<v-jumbotron-stub
+  color="grey lighten-2"
+  height="400px"
+  tag="div"
+>
+  <v-container-stub
+    fill-height=""
+    tag="div"
+  >
+    <v-layout-stub
+      align-center=""
+      tag="div"
+    >
+      <v-flex-stub
+        tag="div"
+      >
+        <h3
+          class="display-3"
+        >
+          
+          
+        
+        </h3>
+         
+        <span
+          class="subheading"
+        >
+          
+          
+        
+        </span>
+         
+        <v-divider-stub
+          class="my-3"
+        />
+         
+        <div
+          class="title mb-3"
+        >
+          
+          Ce tutoriel est accessible à titre de démo.
+          Il est utilisé dans la
+          
+          <a
+            href="https://makina-corpus.com/formations/formation-vuejs"
+          >
+            
+            formation Vue.js
+          
+          </a>
+          
+          de Makina Corpus.
+        
+        </div>
+         
+        <router-link-stub
+          class="nav-link"
+          event="click"
+          tag="a"
+          to="/search?{\\"road\\": \\"52 rue Jacques Babinet\\", \\"city\\": \\"Toulouse\\", \\"zipCode\\": \\"31000\\", \\"complement\\": \\"Makina Corpus\\"}"
+        >
+          <v-btn-stub
+            activeclass="v-btn--active"
+            class="mx-0"
+            color="primary"
+            large="true"
+            tag="button"
+            type="button"
+          >
+            
+            Découvrir l'application finale
+            
+            <v-icon-stub>
+              chevron_right
+            </v-icon-stub>
+          </v-btn-stub>
+        </router-link-stub>
+      </v-flex-stub>
+    </v-layout-stub>
+  </v-container-stub>
+</v-jumbotron-stub>
+`;
