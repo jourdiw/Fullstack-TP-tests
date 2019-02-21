@@ -19,9 +19,4 @@ module.exports = {
   testMatch: [
     '<rootDir>/(**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx))',
   ],
-  collectCoverage: true,
-  collectCoverageFrom: [
-    '<rootDir>/src/**/*.{js,jsx,vue}',
-    '!**/node_modules/**',
-  ],
 };
