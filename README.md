@@ -5,8 +5,8 @@ Ce projet est utilisé lors de la formation Vue.js
 ## Instructions de démarrage
 
 ```
-git clone git@gitlab.makina-corpus.net:formation/formation-vuejs-example-project.git
-cd vuejs-cli
+git clone git@gitlab.com:mdartic/fullstack-tp-tests.git
+cd fullstack-tp-tests
 npm install
 npm run serve
 ```
