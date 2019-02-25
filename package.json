@@ -5,11 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "test": "jest",
-    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "deploy": "surge dist mc-formation-vuejs.surge.sh",
     "deploy:testing": "surge dist mc-formation-vuejs-testing.surge.sh",
-    "deploy": "surge dist mc-formation-vuejs.surge.sh"
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.4.1",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-plugin-pwa": "^3.4.0",
     "@vue/cli-plugin-unit-jest": "^3.4.0",
