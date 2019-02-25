@@ -10,6 +10,7 @@
     "deploy": "surge dist mc-formation-vuejs.surge.sh",
     "deploy:testing": "surge dist mc-formation-vuejs-testing.surge.sh",
     "test:e2e": "vue-cli-service test:e2e",
+    "test:e2eheadless": "vue-cli-service test:e2e --headless",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {

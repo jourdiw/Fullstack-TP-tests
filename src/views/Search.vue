@@ -63,9 +63,9 @@ import NominatimResult from '../components/NominatimResult/NominatimResult.vue';
 import Map from '../components/Map/Map.vue';
 import '../filters/uppercase';
 // import NominatimService from '../services/nominatim';
-import { GET_RESULT } from '../store/nominatim/actions';
+// import { GET_RESULT } from '../store/nominatim/actions';
 // import OverpassService from '../services/overpass';
-import { GET_OVERPASS } from '../store/overpass/actions';
+// import { GET_OVERPASS } from '../store/overpass/actions';
 
 export default {
   name: 'App',
