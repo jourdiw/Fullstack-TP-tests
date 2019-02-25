@@ -2,7 +2,7 @@ import actions from './actions';
 import mutations from './mutations';
 
 const nominatim = {
-  // namespaced: true,
+  namespaced: true,
   state: {
     results: [],
     loading: false,

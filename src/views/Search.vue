@@ -64,7 +64,8 @@ import Map from '../components/Map/Map.vue';
 import '../filters/uppercase';
 // import NominatimService from '../services/nominatim';
 import { GET_RESULT } from '../store/nominatim/actions';
-import OverpassService from '../services/overpass';
+// import OverpassService from '../services/overpass';
+import { GET_OVERPASS } from '../store/overpass/actions';
 
 export default {
   name: 'App',
@@ -84,9 +85,9 @@ export default {
     },
     selectedAddress: '',
     // loadingNominatim: false,
-    loadingOverpass: false,
+    // loadingOverpass: false,
     // nominatimResult: [],
-    overpassResult: '',
+    // overpassResult: '',
     center: {},
     currentNominatimResult: '',
   }),
@@ -97,21 +98,33 @@ export default {
     loadingNominatim(state) {
       return state.nominatim.loading;
     },
+    overpassResult(state) {
+      return state.overpass.results;
+    },
+    loadingOverpass(state) {
+      return state.overpass.loading;
+    },
   }),
   methods: {
     getAddressString(address) {
       return `${address.road} ${address.zipCode} ${address.city}`;
     },
-    searchOverpass(bbox) {
-      this.loadingOverpass = true;
-      OverpassService.getOverpassData(bbox)
-        .then((response) => {
-          this.loadingOverpass = false;
-          this.overpassResult = response;
-        });
+    // searchOverpass(bbox) {
+    //   this.loadingOverpass = true;
+    //   OverpassService.getOverpassData(bbox)
+    //     .then((response) => {
+    //       this.loadingOverpass = false;
+    //       this.overpassResult = response;
+    //     });
+    // },
+    async searchOverpass(bbox) {
+      this.$store.dispatch('overpass/GET_OVERPASS', {
+        bbox,
+        },
+      );
     },
     async searchAddress(address) {
-      this.$store.dispatch(GET_RESULT, {
+      this.$store.dispatch('nominatim/GET_RESULT', {
         address: this.getAddressString(address),
       });
       // this.loadingNominatim = true;
