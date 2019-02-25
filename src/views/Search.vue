@@ -120,8 +120,7 @@ export default {
     async searchOverpass(bbox) {
       this.$store.dispatch('overpass/GET_OVERPASS', {
         bbox,
-        },
-      );
+      });
     },
     async searchAddress(address) {
       this.$store.dispatch('nominatim/GET_RESULT', {

@@ -2,25 +2,25 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    jest: true
+    jest: true,
   },
-  'extends': [
+  extends: [
     'plugin:vue/essential',
-    '@vue/airbnb'
+    '@vue/airbnb',
   ],
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
     'vue/attribute-hyphenation': [
       'error',
-      'always'
+      'always',
     ],
     'vue/html-indent': [
       'error',
-      2
-    ]
+      2,
+    ],
   },
   parserOptions: {
-    parser: 'babel-eslint'
-  }
-}
+    parser: 'babel-eslint',
+  },
+};

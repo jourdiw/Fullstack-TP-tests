@@ -20,5 +20,5 @@ describe('My First Test', () => {
     cy.contains('.v-toolbar__title', 'Makina Corpus - Vue.js Training');
     cy.get('.lang-menu').children().not('.current').click();
     cy.contains('.v-toolbar__title', 'Makina Corpus - Formation Vue.js');
-  })
+  });
 });
