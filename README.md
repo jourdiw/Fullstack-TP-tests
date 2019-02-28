@@ -1,3 +1,7 @@
+[![coverage report](https://gitlab.com/jourdi/fullstack-tp-tests/badges/master/coverage.svg)](https://gitlab.com/jourdi/fullstack-tp-tests/commits/master)
+
+[![pipeline status](https://gitlab.com/jourdi/fullstack-tp-tests/badges/master/pipeline.svg)](https://gitlab.com/jourdi/fullstack-tp-tests/commits/master)
+
 # Tutoriel Vue.js Makina Corpus
 
 Ce projet est utilisé lors de la formation Vue.js
