@@ -3,8 +3,7 @@ image: node
 before_script:
   - yarn
 
-lint:
-  - yarn lint
-
-unit-tests:
-  - yarn test:unit
+job: 
+  script:
+    - yarn lint
+    - yarn test:unit
