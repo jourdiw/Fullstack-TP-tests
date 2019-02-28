@@ -10,3 +10,7 @@ lint:
 unit-tests:
   script:
     - yarn test:unit
+
+integration-tests:
+  script:
+    - yarn test:e2eheadless
