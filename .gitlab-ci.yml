@@ -1,6 +1,10 @@
 image: node
 
-job: 
-  script:
-    - yarn
-    - yarn lint
+before_script:
+  - yarn
+
+lint:
+  - yarn lint
+
+unit-tests:
+  - yarn test:unit
