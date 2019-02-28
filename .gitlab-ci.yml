@@ -16,4 +16,5 @@ integration-tests:
   script:
     - yarn test:e2eheadless
   artifacts:
-    - tests/e2e/videos
+    paths: 
+      - tests/e2e/videos
