@@ -34,3 +34,10 @@ build:
   artifacts:
     paths:
       - dist
+
+deploy:
+  stage: deploy
+  script:
+    - yarn deploy
+  dependencies: 
+    - build

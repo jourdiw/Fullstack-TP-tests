@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "test": "jest",
     "lint": "vue-cli-service lint",
-    "deploy": "surge dist mc-formation-vuejs.surge.sh",
+    "deploy": "surge dist jourdi-fullstack-tp-tests.surge.sh",
     "deploy:testing": "surge dist mc-formation-vuejs-testing.surge.sh",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
