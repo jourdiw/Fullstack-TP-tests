@@ -12,5 +12,8 @@ unit-tests:
     - yarn test:unit
 
 integration-tests:
+  image: cypress/base:8
   script:
     - yarn test:e2eheadless
+  artifacts:
+    - tests/e2e/videos
